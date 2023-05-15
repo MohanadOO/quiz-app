@@ -8,6 +8,7 @@ Test Your Knowledge With this Quiz App built with Open Trivia DB 📃
 
 - [Overview](#overview)
 	- [Features](#features)
+	- [Screenshots](#screenshots)
 	- [Links](#links)
 	- [Setup](#setup)
 - [My process](#my-process)
@@ -21,6 +22,10 @@ Test Your Knowledge With this Quiz App built with Open Trivia DB 📃
 **Users should be able to:**
 - View the optimal layout for the site depending on their device's screen size
 - Ability to select between genres and the number of question to be testes with.
+
+### Screenshots
+![Start Page](./public/start.png)
+![Quiz Page](./public/quiz-page.png)
 
 ### Links
 
