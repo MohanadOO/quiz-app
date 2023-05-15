@@ -10,10 +10,6 @@ export default function App() {
   const [showAnswer, setShowAnswer] = useState(false)
   const userAnswers = useRef([])
 
-  function checkAnswers() {
-    setShowAnswer(true)
-  }
-
   function handleAnswers(hold, correct, index) {
     if (hold.choice === correct && !hold.hold) {
       userAnswers.current[index] = 'Correct'
@@ -62,7 +58,10 @@ export default function App() {
           {questionsElement}
           <div className='check-answers-container'>
             {!showAnswer ? (
-              <button onClick={checkAnswers} className='check-answer'>
+              <button
+                onClick={() => setShowAnswer(true)}
+                className='check-answer'
+              >
                 Check Answers
               </button>
             ) : (
@@ -79,7 +78,7 @@ export default function App() {
                 {
                   userAnswers.current.filter((correct) => correct === 'Correct')
                     .length
-                }{' '}
+                }
                 / {questions.length}
               </h2>
             ) : null}
